@@ -1,0 +1,57 @@
+
+body{
+    background-color: aqua;
+}
+
+
+/* All p inside div will get these properties */
+/* div p{
+    color: rgb(75, 42, 165);
+} */
+
+
+/*  child  */
+/* div > p{
+    color: rgb(75, 42, 165);
+} */
+
+
+
+/* Adjacent siblings */
+/* div+ p{
+    color: rgb(234, 42, 65);
+} */
+
+
+
+/* General Siblings */
+div~ p{
+    color: rgb(75, 42, 165);
+}
+
+
+
+
+   /*
+attrbute Selectors
+a [attribute]
+Selects all A elements with the specified attribute.
+
+a[attribute=value]
+Selects all A elements with specified attribute and value.
+
+a[attribute^=value]
+Selects all A elements where the value of attribute starts with the specified value.
+
+a[attribute$=value]
+Selects all A elements where the value of attribute ends with the specified value.
+
+a[attribute*=value]
+Selects all A elements where the value of the attribute contains the specified value.
+
+ 
+
+
+  
+  
+  */

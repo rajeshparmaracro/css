@@ -1,0 +1,110 @@
+Total Width and Height of an HTML element
+
+When we specify the width and height property for any HTML element using CSS, we are actually setting the width and height of the content not the width and height of the complete element.
+
+The complete width and height of an element include the padding, border
+
+Total element width = width + left padding + right padding + left border + right border
+
+Total element height = height + top padding + bottom padding + top border + bottom border
+
+-----------------
+The display property specifies how the element should be rendered.
+
+The most common values provided to the display property are inline, block, inline-block, flex, and grid
+
+inline: The HTML element applied with this property will be rendered inline. We cannot apply height and width properties.
+
+block: The HTML element applied with this property will be rendered as a block element in the next line
+
+inline-block: The HTML element will behave like an inline element but we can apply width and height properties
+-------------------
+1. Create Boxmodel.html and write the code as shown below
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8"> 
+      <title>Box model</title>
+      <link rel="stylesheet" type="text/css" href="css/boxmodel.css"> 
+  </head>
+  <body>
+  <h3>Box model</h3>
+  <div>
+      <p>This text is the content of the box.</p>
+      <p>This text is the content of the box.</p>
+      <p>This text is the content of the box.</p>
+  </div>
+  </body>
+</html>
+
+2. Create boxmodel.css file within the css folder and write the code as shown below
+
+div {
+  border: lightgrey dashed 3px;
+  padding: 20px;
+  margin: 60px;
+  width: 220px;
+  height: 125px;
+}
+
+
+-------------------------\
+Tryout
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8"> 
+    <title>Contact Us</title>
+    <style>
+        body {
+          font-family: sans-serif;
+        }
+        
+        ul li {
+          display: inline;
+        }
+        
+        ul li a {
+          text-decoration: none;
+          background-color: black;
+          color: white;
+        }
+        
+        h1,
+        p {
+          background-color: #dde0e3;
+        }
+        
+        h1 {
+          padding: 50px;
+        }
+        
+        p {
+          padding: 20px 10px;
+        }
+    </style>
+  </head>
+  <body>
+      
+	<main>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+	<h1>Contact Us</h1>
+	
+	<div>
+        <p>Thanks for visiting our web site; you are requested send us the following information enabling us to design the best tour for you:
+        Travel period month/year, No. of Days for your tour, Total number of people traveling, Area of Interest in India, Preference of hotels, or per day per person budget, Preference of destinations you wish to cover.</p>
+        <p>And submit the form with your suggestions and feedback the tour programme will be customized as per your interest. </p>
+	</div>
+</main>
+   
+    <footer>
+      <p>Copyright @ TravelIndia, 2020</p>
+    </footer>
+  </body>
+</html>

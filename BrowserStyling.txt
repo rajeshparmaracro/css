@@ -1,0 +1,23 @@
+The browser adds some minimal styling to the web page. The browser styling will be overwritten when the developer includes styling to the webpage
+
+The styling added by the browser is not consistent across different browsers. Each browser has its own default styling.
+
+When you create a paragraph in HTML and when you check the styling in developer tools you will observe some default style is added by the browser
+
+p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+The paragraphs are added with margins. The -webkit is a prefix to represent chrome browser
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+Similarly, the links will be underlined by default and will be in blue color

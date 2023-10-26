@@ -1,0 +1,33 @@
+img
+{
+   width:200px;
+   height:200px;
+   border:1px solid black;
+}
+img#translate
+{
+   width:200px;
+   height:200px;
+   border:1px solid black;
+   transform:scale(1);
+   /* transform: scale(2,1); */
+   /* transform:skew(30deg, 10deg); */
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top:50px;
+    transition: 10s linear;
+    }
+    
+img:hover {
+    width: 200px;
+    height: 200px;
+    margin-left: 400px;
+    transform:rotate(360deg);
+    box-shadow: -5px -5px 5px #888;
+    }
+    

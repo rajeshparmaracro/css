@@ -1,0 +1,36 @@
+h1:hover {
+    background-color: black;
+    color: white;
+  }
+
+  a:hover {
+    background-color: black;
+    color: white !important;
+  } 
+  
+  a::visited {
+    color: rgb(226, 42, 226);
+  }
+
+  
+  input[type="text"]:enabled {
+    background-color: lightblue;
+  }
+  input[type="text"]:required {
+    background-color: red;
+  }
+
+  
+  h1::first-letter {
+    color: #8a2be2;
+    font-size: 200%;
+  }
+  
+
+  body{
+    background-color: antiquewhite;
+  }
+
+
+
+

@@ -1,0 +1,40 @@
+#parent
+{
+	background-color:#2196f3;
+	border: 1px solid white;
+	height:200px;
+	width:200px;
+}
+#child
+{
+	background-color:grey;
+	border: 1px solid white;
+	height:200px;
+	margin-left:50px;
+	margin-top:50px;
+	width:400px;
+	opacity:0.5;
+	color:white;
+}
+#parent1
+{
+	background-color:#2196f3;
+	border: 1px solid white;
+	height:200px;
+	width:200px;
+	margin-top: 100px;
+}
+
+
+#child1
+{
+	background-color:RGBA(128,128,128,0.5);
+    background-color:hsl(0, 100%, 86%);
+    background-color:hsla(160, 80%, 58%, 0.28);
+	border: 1px solid white;
+	height:200px;
+	margin-left:50px;
+	margin-top:50px;
+	width:400px;
+	color:white;
+}

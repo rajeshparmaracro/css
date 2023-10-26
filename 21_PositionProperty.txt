@@ -1,0 +1,8 @@
+Some Important ones are-->
+Static  ---> by default
+absolute---> relative to the parent
+relative---> relative to actual position 
+Fixed ----> Relative to the browser window
+Sticky----> stick at the top always.
+
+

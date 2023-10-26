@@ -1,0 +1,53 @@
+Border image is used to specify an image as a border around the HTML element. Border image is a short-hand property to set border-source, border-image-slice, border-width, border-outset, border repeat.
+
+ 
+
+border-image
+
+description
+
+border-source
+
+Path of the image to be used for the border.
+
+border-image-slice
+
+Specifies the values to slice the image. Can have 1 to 4(top, right, bottom, left) values expressed as pixels or %.
+
+border-width
+
+Specifies the width of the border-image.
+
+border-outset
+
+Specifies the amount by which border image area extends beyond border-box.
+
+border-repeat
+
+Specifies whether the edges of the image should be stretched, repeated, rounded or scaled.
+
+
+---------------------------------------------------
+The border-repeat property specifies whether to stretch, repeat, round or scale the edges of the image.
+
+ 
+
+border-repeat
+
+Description
+
+stretch
+
+Default value. The image is stretched to fill the area between the edges of the border.
+
+repeat
+
+The image is tiled, or repeated until it fills the area between the edges of the border.
+
+space
+
+The image is tiled, or repeated to fill the area between the edges of the border. If the area cannot be filled with a whole number of tiles, the extra space is distributed around the tiles.
+
+round
+
+The image is tiled, or repeated to fill the area between the edges of the border. If it cannot be filled with a whole number of tiles, the image is re-scaled.

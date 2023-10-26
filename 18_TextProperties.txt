@@ -1,0 +1,237 @@
+We may want to present our text in a more appealing way like spacing, capitalizing, indenting and underlining, etc
+
+CSS provides the following text properties.
+
+text-align: Specifies the horizontal alignment of the text
+text-align: right;
+
+text-decoration: Specifies whether the text should be underlined or overlined. Values can be none (default), underline, overline, line-through
+text-decoration: underline;
+
+text-transform: Specifies whether the text should be rendered in uppercase, lowercase, or camelcase. Values can be capitalized, uppercase, lowercase.
+text-transform: capitalize;
+
+ letter-spacing: Specifies the spacing between the letters
+letter-spacing: 90px;
+
+word-spacing: Specifies the spacing between the words
+word-spacing: 90px;
+
+text-indent: Specifies the indentation of the text. Values can be left, right, center and justify
+text-indent: 90px;
+----------------------------------------
+Text Shadow
+The text-shadow property adds a shadow to the text of any HTML element
+
+text-shadow: 10px 6px 2px black;
+
+The first value specifies the horizontal offset. Positive value creates a shadow to the right. Negative value creates the shadow to the left.
+
+The second value specifies the vertical offset. Positive value creates a shadow to the left. Negative value creates the shadow to the right.
+
+The third value specifies the blur distance. An optional value that decides the percentage of blur effect and takes a positive value.
+
+The fourth value specifies the shadow color. 
+
+--------------------
+Demo---
+------
+Demo steps:
+
+1. Create Text.html and write the code as shown below
+
+<!DOCTYPE html>
+<html> 
+<head> 
+	<meta charset="UTF-8"> 
+	<title>Text Properties</title> 
+	<link rel="stylesheet" type="text/css" href="css/text.css"> 
+</head> 
+<body> 
+	<h1 class="uppercase shadow">training offerings</h1> 
+	<h2 class="decorate">UI courses</h2> 
+	<p class="indent"> Our focus is to enable participants to develop single page applications efficiently. The popular courses are:	
+	<ul> 
+		<li>HTML5</li> 
+		<li>JavaScript</li> 
+		<li>React</li> 
+		<li>Angular</li> 
+	</ul> 
+	</p> 
+</body> 
+</html> 
+2. Create a text.css file within the CSS folder and write the below code
+
+.uppercase {
+  text-transform: uppercase;
+}
+.shadow {
+  text-shadow: 3px 3px 2px grey;
+}
+.decorate {
+  text-decoration: underline;
+}
+.indent {
+  text-indent: 20px;
+}
+----------------------------
+Demo Text Shadow
+
+Let us see the usage of the text-shadow property in the below example.
+
+ homepage.html
+
+<html>
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="homepage.css">
+</head> 
+<body>
+<form id="login_form">
+    <h1>Learners Login</h1>
+    <input type="email" placeholder="Email" required="">
+    <input type="password" placeholder="Enter your password" required="">                 
+    <input id="login_button" type="submit" value="Login"></input> <br><br>
+    <a href="forgotpassword.html">Forgot password?</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="signup.html">Create account</a>
+</form>
+</body>
+
+homepage.css
+
+#login_form
+{
+    width: 400px;
+    height: 300px;
+    margin-top:50px;
+    margin-left:80px;
+    padding: 20px;
+    border: 2px solid #808080;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+ }
+h1 
+{
+    text-align: center;
+    margin: 0 0 20px;
+    text-shadow: 2px 2px 2px rgb(255,0,0,1);
+}
+input{
+    margin: 5px 0;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius:20px;
+}
+#login_button{
+    margin: 20px 0 0 0;
+    padding: 15px 8px;          
+    width: 20%;
+    height:20%;
+    border: 1px solid hsla(0,72%,27%,0);
+    font: bold 1.2em myFirstFont;
+    color: #fff;
+    background-color: #4d90fe;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+ }
+input:focus
+{
+    outline:0;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+} 
+---------------------------------
+Demo Multiple text Shadow
+
+homepage.css
+
+#login_form
+{
+    width: 400px;
+    height: 300px;
+    margin-top:50px;
+    margin-left:80px;
+    padding: 20px;
+    border: 2px solid #808080;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+ }
+h1 
+{
+    text-align: center;
+    margin: 0 0 20px;
+    text-shadow: 4px 4px 2px #3F51B5, -4px -4px 3px #E91E63; 
+}
+input{
+    margin: 5px 0;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius:20px;
+}
+#login_button{
+    margin: 20px 0 0 0;
+    padding: 15px 8px;          
+    width: 20%;
+    height:20%;
+    border: 1px solid hsla(0,72%,27%,0);
+    font: bold 1.2em myFirstFont;
+    color: #fff;
+    background-color: #4d90fe;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+ }
+input:focus
+{
+    outline:0;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+} 
+
+
+______________________
+Demo Glow effect
+
+
+homepage.css
+
+#login_form
+{
+    width: 400px;
+    height: 300px;
+    margin-top:50px;
+    margin-left:80px;
+    padding: 20px;
+    border: 2px solid #808080;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+ }
+h1 
+{
+    text-align: center;
+    margin: 0 0 20px;
+    text-shadow: 0px 0px 10px rgba(255,0,0,1); 
+}
+input{
+    margin: 5px 0;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius:20px;
+}
+#login_button{
+    margin: 20px 0 0 0;
+    padding: 15px 8px;          
+    width: 20%;
+    height:20%;
+    border: 1px solid hsla(0,72%,27%,0);
+    font: bold 1.2em myFirstFont;
+    color: #fff;
+    background-color: #4d90fe;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+ }
+input:focus
+{
+    outline:0;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+} 
